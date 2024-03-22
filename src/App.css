@@ -1,0 +1,54 @@
+.App{
+  border:2px solid white;
+  width: 80vw;
+  height: 98vh;
+  margin:auto;
+}
+.canales{
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 30% ;
+  
+}
+.listaCanales{
+  display:flex;
+  justify-content: center;
+  height: 90%;
+  width: 100%;
+  flex-wrap: wrap;
+  overflow: auto;
+}
+.selCategoria{
+  color:white;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.player{
+  border:2px solid yellow;
+  height: 100%;
+  width: 80%;
+}
+.App-header{
+  color:white;
+  width: 100%;
+  border:2px solid red;
+}
+main{
+  display:flex;
+  height: 80%;
+  width: 100%;
+  border:2px solid rgb(219, 196, 196);
+}
+
+
+.logoCanal{
+  margin:0.3rem;
+  height: 8rem;
+  width: 8rem;
+}
+.logoCanal:hover{
+  cursor:pointer;
+}
