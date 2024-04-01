@@ -81,17 +81,12 @@ let canales = [
         "imagen": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Showven.png",
         "categoria": "MUSICA"
     },
-    
-     /*29*/ {
+        /*29*/ {
         "nombre": "VideoTour",
         "direccion": "http://k4.usastreams.com/videotour/videotour/playlist.m3u8?PlaylistM3UCL",
         "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT56IjB9XR8Qco22zbgvBXUKiZOWgoadKh1cOlNOGDgk7e9Tk7dEHfdExDXl2WaDjID92o&usqp=CAU",
         "categoria": "MUSICA"
     },
-    
-     
-     
-    
     /*34*/
     {
         "nombre": "LATINZONE",
@@ -105,9 +100,1119 @@ let canales = [
         "direccion": "https://vcp.myplaytv.com/italianissimo/italianissimo/playlist.m3u8?PlaylistM3UCL",
         "imagen": "data:image/png;base64,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",
         "categoria": "MUSICA"
-    }
-    
+    },
+      /*34*/
+      {
+        "nombre": "PANCTV",
+        "direccion": "https://stream.trixserver.com:3088/live/uv096live.m3u8?PlaylistM3UCL",
+        "imagen": "https://play-lh.googleusercontent.com/-FVhaeUjvONL49NYdVMchoLXU421387791mp8zZ15JFic_kPyb3vULf86ffIr-NeOg",
+        "categoria": "MUSICA"
+      
+    },
+    {
+        "nombre": "LOCOMOTION TV",
+        "direccion": "http://51.222.85.85:81/hls/loco/index.m3u8?PlaylistM3UCL",
+        "imagen": "https://static.wikia.nocookie.net/iepfanon/images/6/66/Locomotion_-_logo_(2005_-_2008).png",
+        "categoria": "DIBUJOS"
+      
+    },
+   {
+    "nombre": "Varied TV",
+    "direccion": "https://cloud5.streaminglivehd.com:3874/hybrid/play.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/variedtv_320.jpg",
+    "categoria": "DIBUJOS"
   
+   },
+   {
+    "nombre": "13 MAX",
+    "direccion": "http://coninfo.net:1935/13maxhd/live13maxtvnuevo/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://play-lh.googleusercontent.com/BsoQ8Oks_J4sI-6JEvYQw3Z107DtkSUIGTwAteVvVCiPMZL8ROulBuL80JGZT6WrQQ_J",
+    "categoria": "ARGENTINA"
+  
+   },
+   {
+    "nombre": "5 TV",
+    "direccion": "http://www.coninfo.net:1935/tvcinco/live1/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://www.tvcinco.com/images/logo2.jpg",
+    "categoria": "ARGENTINA"
+  
+   },
+   {
+    "nombre": "AGENDA NECOCHENSE",
+    "direccion": "https://stmvideo1.livecastv.com/agendaagenda/agendaagenda/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://pbs.twimg.com/profile_images/1558479533619175426/Q5X0Id87_400x400.jpg",
+    "categoria": "ARGENTINA"
+
+   },
+   {
+    
+        "nombre": "Aire de Santa Fe",
+        "direccion": "https://sc1.stweb.tv/airedigital/live/playlist.m3u8?PlaylistM3UCL",
+        "imagen": "https://imgsvr.radiocut.site/get/crop/center/200/200/radio_logos/70/ea/70ea0606-45c6-4b67-95e2-8dce1ba727c8.png",
+        "categoria": "ARGENTINA"
+   },
+   {
+    
+    "nombre": "ARGENTINISIMA SATELITAL",
+    "direccion": "https://stream1.sersat.com/hls/argentinisima.m3u8?PlaylistM3UCL",
+    "imagen": "https://i.ytimg.com/vi/KVNK2RsVYTA/maxresdefault.jpg",
+    "categoria": "ARGENTINA"
+
+   
+},
+{
+        "nombre": "AVC HD",
+    "direccion": "https://ssh101.bozztv.com/ssh101/streamavc/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://static.gameloop.com/img/86fdc6450c2d4825f4e75d20da8d9106.png?imageMogr2/thumbnail/172.8x172.8/format/webp",
+    "categoria": "ARGENTINA"
+},
+{
+"nombre": "AZAHARES RADIO MULTIMEDIA",
+"direccion": "http://streamyes.alsolnet.com/azaharesfm/live/playlist.m3u8?PlaylistM3UCL",
+"imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgfFCTJP5v6gE-A2Acg-8DYUYFdxbzIGo_zhIiF8BrraWbh-JkQmcmxqFYEomgkbqzBDE&usqp=CAU",
+"categoria": "ARGENTINA"
+},
+{
+    "nombre:": "Latino Kids TV",
+    "direccion" :"https://cloud5.streaminglivehd.com:3555/hybrid/play.m3u8?PlaylistM3UCL",
+    "imagen" :"https://static.wixstatic.com/media/b22f37_296d66deb5254080a6d3cd2d2cde8bec~mv2.jpg/v1/fill/w_1162,h_654,al_c/b22f37_296d66deb5254080a6d3cd2d2cde8bec~mv2.jpg",
+    "categoria": "DIBUJOS"
+  },
+  {
+    "nombre:": "24-7 AR",
+    "direccion" :"https://stmv5.voxtvhd.com.br/247tv/247tv/playlist.m3u8?PlaylistM3UCL",
+    "imagen" :"https://cdn.m3u.cl/logo/1551_24_7_TV.png",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre:": "TELECONDOR",
+    "direccion" :"https://videostream.shockmedia.com.ar:19360/canal4telecondor/canal4telecondor.m3u8?PlaylistM3UCL",
+    "imagen" :"https://cdn.m3u.cl/logo/765_Canal_4_Telecondor.png",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "Canal 5 del Pueblo ✪ | AR",
+    "direccion": "https://stmv1.cnarlatam.com/canal5pueblo/canal5pueblo/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/858_Canal_5_del_Pueblo.jpg",
+    "categoria": "ARGENTINA"
+  },
+ /* {
+    "nombre": "Canal XFN ✪ | AR",
+    "direccion": "https://streamconex.com:1936/canalxfn/canalxfn/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/277_Canal_XFN.png",
+    "categoria": "ARGENTINA"
+  },/*
+  {
+    "nombre": "Crossing TV ✪ | AR",
+    "direccion": "https://stmv6.voxtvhd.com.br/crossingtv/crossingtv/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/219_Crossing_TV.png",
+    "categoria": "ARGENTINA"
+  },*/
+  {
+    "nombre": "Milennio TV ✪ | AR",
+    "direccion": "https://videostream.shockmedia.com.ar:19360/milenniotv/milenniotv.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/768_Milennio_TV.png",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "Neo TV ✪ | AR",
+    "direccion": "https://videostream.shockmedia.com.ar:19360/neotvdigital/neotvdigital.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1006_Neo_TV.png",
+    "categoria": "ARGENTINA"
+  },
+ /* {
+    "nombre": "Señal Urbana ✪ | AR",
+    "direccion": "https://video.fiberfly.com.ar/stream/hls1/110106.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/218_Senal_Urbana.png",
+    "categoria": "ARGENTINA"
+  }*/
+  /*{
+    "nombre": "Tele Mix ✪ | AR",
+    "direccion": "https://panel.dattalive.com:443/8068/8068/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1026_Tele_Mix.png",
+    "categoria": "ARGENTINA"
+  },*/
+  {
+    "nombre": "UNaM Transmedia ✪ | AR",
+    "direccion": "http://192.100.186.53:8090/hls/live.stream.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1010_UNaM_Transmedia.png",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "UCL Televisión LATAM ✪ | UY",
+    "direccion": "https://livedelta.cdn.antel.net.uy/out/u/url_canalu.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/494_UCL_Television_LATAM.png",
+    "categoria": "URUGUAY"
+  },
+  {
+    "nombre": "Mundo de la Musica TV ✪ | CL",
+    "direccion": "https://tv.streaming-chile.com:1936/mundodelamusicatv/mundodelamusicatv/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/771_Mundo_de_la_Musica_TV.png",
+    "categoria": "MUSICA"
+  },
+  {
+    "nombre": "Retro Plus TV ✪ | CL",
+    "direccion": "https://video06.logicahost.com.br/retroplustv/retroplustv/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/4_Retro_Plus_TV.png",
+    "categoria": "MUSICA"
+  },/*
+  {
+    "nombre": "America Tucuman | AR",
+    "direccion": "https://ythls.onrender.com/channel/UCZ8sgVyD7HqDor8ujB-TZpg.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/214_America_Tucuman.png",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "Antena 91 | AR",
+    "direccion": "https://tuvideoonline.com.ar:3393/live/antena91live.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1150_Antena_91.png",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "ATV Argentina | AR",
+    "direccion": "https://stream.arcast.com.ar/atbargentina/atbargentina/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1073_ATV_Argentina.png",
+    "categoria": "ARGENTINA"
+  },*/
+  {
+    "nombre": "AZM TV | AR",
+    "direccion": "https://live.canalnueve.tv/index.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/302_AZM_TV.png",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "Bayres TV | AR",
+    "direccion": "https://streaming02.gbasat.com.ar:19360/bayrestv/bayrestv.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1200_Bayres_TV.png",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "BTV Digital | AR",
+    "direccion": "https://cdnhd.iblups.com/hls/S4CINL1DVM.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1414_BTV_Digital.png",
+    "categoria": "ARGENTINA"
+  },/*
+  {
+    "nombre": "Cadena 103 | AR",
+    "direccion": "http://arcast.net:1935/cadena103/cadena103/playlist.m3u8?PlaylistM3UC",
+    "imagen": "https://cdn.m3u.cl/logo/224_Cadena_103.png",
+    "categoria": "ARGENTINA"
+  }*/
+  {
+    "nombre": "Calchaqui TV | AR",
+    "direccion": "https://stream.trixserver.com:3836/live/uv068live.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1423_Calchaqui_TV.png",
+    "categoria": "ARGENTINA"
+  },
+  /*{
+    "nombre": "Canal 10 | AR",
+    "direccion": "https://stream.arcast.live/canal10/ngrp:canal10_all/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/266_Canal_10.png",
+    "categoria": "ARGENTINA"
+  },*/
+  {
+    "nombre": "Canal 10 Nortevision | AR",
+    "direccion": "https://vivo.solumedia.com:19360/nortevision/nortevision.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/799_Canal_10_Nortevision.jpg",
+    "categoria": "ARGENTINA"
+  },
+  /*{
+    "nombre": "Canal 10 Rio Negro | AR",
+    "direccion": "https://panel.dattalive.com:443/8204/8204/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/299_Canal_10_Rio_Negro.png",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "Canal 10 San Rafael | AR",
+    "direccion": "https://streamcasthd.com:1936/tvdiez/tvdiez/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1344_Canal_10_San_Rafael.png",
+    "categoria": "ARGENTINA"
+  },*/
+  {
+    "nombre": "Canal 11 de La Costa | AR",
+    "direccion": "https://vivo.solumedia.com:19360/dadaproductora/dadaproductora.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1345_Canal_11_de_La_Costa.png",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "Canal 12 Madryn TV | AR",
+    "direccion": "https://5f700d5b2c46f.streamlock.net:443/madryntv/madryntv/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/268_Canal_12_Madryn_TV.png",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "Canal 13 La Rioja | AR",
+    "direccion": "http://arcast.net:1935/mp/mp/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/227_Canal_13_La_Rioja.jpg",
+    "categoria": "ARGENTINA"
+  },/*
+  {
+    "nombre": "Canal 2 Jujuy | AR",
+    "direccion": "http://api.new.livestream.com/accounts/679322/events/3782013/live.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/228_Canal_2_Jujuy.png",
+    "categoria": "ARGENTINA"
+  },*/
+  {
+    "nombre": "Canal 2 Misiones | AR",
+    "direccion": "https://nd106.republicaservers.com:4433/hls/canal2misioness/index.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1182_Canal_2_Misiones.png",
+    "categoria": "ARGENTINA"
+  },/*
+  {
+    "nombre": "Canal 2 Perico | AR",
+    "direccion": "https://streamcasthd.com:1936/tecnovisioncanal2tv/tecnovisioncanal2tv/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/813_Canal_2_Perico.jpg",
+    "categoria": "ARGENTINA"
+  },*/
+  /*{
+    "nombre": "Canal 2 Sanagasta | AR",
+    "direccion": "https://stmvideo1.livecastv.com/canal2/canal2/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/205_Canal_2_Sanagasta.jpg",
+    "categoria": "ARGENTINA"
+  },*/
+  {
+    "nombre": "Canal 20 Villamaria | AR",
+    "direccion": "https://cronos.aldeaglobal.net.ar/hls/canal20.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/229_Canal_20_Villamaria.png",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "Canal 21 TV | AR",
+    "direccion": "https://iptv.ixfo.com.ar:30443/c21tv/hd/c21tv/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1057_Canal_21_TV.png",
+    "categoria": "ARGENTINA"
+  },
+ /* {
+    "nombre": "Canal 22 Buenos Aires | AR",
+    "direccion": "https://5f700d5b2c46f.streamlock.net:443/canal22/canal22/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/230_Canal_22_Buenos_Aires.jpg",
+    "categoria": "ARGENTINA"
+  },*/
+  /*{
+    "nombre": "Canal 26 | AR",
+    "direccion": "http://live-edge01.telecentro.net.ar/live/smil:c26.smil/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/271_Canal_26.png",
+    "categoria": "ARGENTINA"
+  },*/
+  {
+    "nombre": "Canal 3 Formosa | AR",
+    "direccion": "https://stmvideo2.livecastv.com/agenfor/agenfor/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1347_Canal_3_Formosa.png",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "Canal 3 La Pampa | AR",
+    "direccion": "https://stream.arcast.com.ar/c3lapampa/ngrp:c3lapampa_all/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/776_Canal_3_La_Pampa.png",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "Canal 3 Las Heras | AR",
+    "direccion": "https://stream.arcast.com.ar/canal3/canal3/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/231_Canal_3_Las_Heras.jpg",
+    "categoria": "ARGENTINA"
+  },/*
+  {
+    "nombre": "Canal 3 Pinamar | AR",
+    "direccion": "https://intelincloud.com.ar/canales/canal3pinamar/index.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/255_Canal_3_Pinamar.png",
+    "categoria": "ARGENTINA"
+  },*/
+  {
+    "nombre": "Canal 3 Rosario | AR",
+    "direccion": "https://59d52c5a5ce5e.streamlock.net:4443/canal3rosario/ngrp:canal3rosario_all/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/256_Canal_3_Rosario.png",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "Canal 34 San Juan | AR",
+    "direccion": "http://streamyes.alsolnet.com/canal34hd/live/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1346_Canal_34_San_Juan.png",
+    "categoria": "ARGENTINA"
+  },/*
+  {
+    "nombre": "Canal 4 Bahia Blanca | AR",
+    "direccion": "https://vivo.solumedia.com:19360/bvconline/bvconline.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/257_Canal_4_Bahia_Blanca.png",
+    "categoria": "ARGENTINA"
+  },*/
+  {
+    "nombre": "Canal 4 Balcarce | AR",
+    "direccion": "https://stmvideo2.livecastv.com/canal4/canal4/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1349_Canal_4_Balcarce.png",
+    "categoria": "ARGENTINA"
+  },/*
+  {
+    "nombre": "Canal 4 Eldorado | AR",
+    "direccion": "https://stream.arcast.com.ar/canal4eldorado/canal4eldorado/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/779_Canal_4_Eldorado.png",
+    "categoria": "ARGENTINA"
+  },*/
+  /*{
+    "nombre": "Canal 4 Jujuy | AR",
+    "direccion": "https://5cd577a3dd8ec.streamlock.net/canal4/smil:manifest.smil/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/258_Canal_4_Jujuy.png",
+    "categoria": "ARGENTINA"
+  },*/
+  {
+    "nombre": "Canal 4 Posadas | AR",
+    "direccion": "http://iptv.ixfo.com.ar:8081/live/C4POS/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/259_Canal_4_Posadas.png",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "Canal 4 San Juan | AR",
+    "direccion": "https://streamlov.alsolnet.com/canal4sanjuan/live/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/260_Canal_4_San_Juan.png",
+    "categoria": "ARGENTINA"
+  },/*
+  {
+    "nombre": "Canal 40 Caucete | AR",
+    "direccion": "https://canalsj.kozow.com/canal40/index.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1348_Canal_40_Caucete.png",
+    "categoria": "ARGENTINA"
+  },*/
+  {
+    "nombre": "Canal 5 Pico Truncado | AR",
+    "direccion": "http://streaming.arcast.com.ar:1935/canal5picotruncado/canal5picotruncado/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/778_Canal_5_Pico_Truncado.jpg",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "Canal 5 Santa Fe | AR",
+    "direccion": "https://stream.arcast.com.ar/c5sf/c5sf/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/773_Canal_5_Santa_Fe.png",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "Canal 5 Tucuman | AR",
+    "direccion": "https://videohd.live:19360/8090/8090.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1138_Canal_5_Tucuman.png",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "Canal 50 Morteros | AR",
+    "direccion": "https://coopmorteros.online/canal50/vivo.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/232_Canal_50_Morteros.png",
+    "categoria": "ARGENTINA"
+  },
+  /*{
+    "nombre": "CANAL 5TV | AR",
+    "direccion": "https://srv3.zcast.com.br/carlosr/carlosr/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/233_CANAL_5TV.jpg",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "Canal 6 Entre Rios | AR",
+    "direccion": "https://stmvideo1.livecastv.com/canal6er/canal6er/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/307_Canal_6_Entre_Rios.png",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "Canal 6 Mar del Plata | AR",
+    "direccion": "https://panel.dattalive.com:443/8166/8166/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1131_Canal_6_Mar_del_Plata.png",
+    "categoria": "ARGENTINA"
+  },*/
+  {
+    "nombre": "Canal 6 Moreno | AR",
+    "direccion": "https://stream.arcast.com.ar/canal6moreno/canal6moreno/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/261_Canal_6_Moreno.png",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "Canal 6 Posadas | AR",
+    "direccion": "https://iptv.ixfo.com.ar:30443/live/c6digital/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/262_Canal_6_Posadas.png",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "Canal 7 Jujuy | AR",
+    "direccion": "https://stream.arcast.live/canal7jujuy/ngrp:canal7jujuy_all/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/264_Canal_7_Jujuy.png",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "Canal 7 Neuquen | AR",
+    "direccion": "https://stream.arcast.com.ar/c7nq/ngrp:c7nq_all/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1401_Canal_7_Neuquen.png",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "Canal 7 TV | AR",
+    "direccion": "https://stream.arcast.com.ar/envivo/castv/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1350_Canal_7_TV.png",
+    "categoria": "ARGENTINA"
+  },
+ /* {
+    "nombre": "Canal 79 Mar del Plata | AR",
+    "direccion": "https://streamconex.com:1936/mardelplata/mardelplata/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/272_Canal_79_Mar_del_Plata.png",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "Canal 8 Catamarca | AR",
+    "direccion": "https://stream.arcast.com.ar/c8/c8/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/235_Canal_8_Catamarca.jpg",
+    "categoria": "ARGENTINA"
+  {
+    "nombre": "Canal 8 Mar del Plata | AR",
+    "direccion": "https://stream.arcast.com.ar/c8mdp/ngrp:c8mdp_all/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1336_Canal_8_Mar_del_Plata.png",
+    "categoria": "ARGENTINA"
+  },
+  
+  {
+    "nombre": "Canal 9 La Rioja | AR",
+    "direccion": "https://inliveserver.com:1936/17012/17012/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1351_Canal_9_La_Rioja.png",
+    "categoria": "ARGENTINA"
+  },*/
+  {
+    "nombre": "Canal 9 Litoral | AR",
+    "direccion": "https://stream.arcast.live/ahora/ahora/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/236_Canal_9_Litoral.png",
+    "categoria": "ARGENTINA"
+  },
+  /*{
+    "nombre": "Canal 9 Resistencia | AR",
+    "direccion": "http://201.217.245.41:8081/testmelucas/canal9/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/250_Canal_9_Resistencia.png",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "Canal 9 Rio Cuarto | AR",
+    "direccion": "https://streamcasthd.com:1936/canal9riocuartotv/canal9riocuartotv/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1161_Canal_9_Rio_Cuarto.png",
+    "categoria": "ARGENTINA"
+  },*/
+  {
+    "nombre": "Canal 9 Televida | AR",
+    "direccion": "https://unlimited1-cl-isp.dps.live/televidaar/televidaar.smil/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/309_Canal_9_Televida.png",
+    "categoria": "ARGENTINA"
+  },
+  /*{
+    "nombre": "Canal 907 FM Comunicar | AR",
+    "direccion": "https://panel.dattalive.com/canal907/canal907/chunklist_w1205944599.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/273_Canal_907_FM_Comunicar.png",
+    "categoria": "ARGENTINA"
+  },*/
+  {
+    "nombre": "Canal Cinco Tigre | AR",
+    "direccion": "https://videostream.shockmedia.com.ar:19360/cincotv/cincotv.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/274_Canal_Cinco_Tigre.png",
+    "categoria": "ARGENTINA"
+  },/*
+  {
+    "nombre": "Canal Coop | AR",
+    "direccion": "https://panel.dattalive.com:443/8138/8138/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/275_Canal_Coop.png",
+    "categoria": "ARGENTINA"
+  },*/
+  {
+    "nombre": "Canal E | AR",
+    "direccion": "https://unlimited1-us.dps.live/perfiltv/perfiltv.smil/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1417_Canal_E.png",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "Canal Provincial | AR",
+    "direccion": "https://streaming.telered.com.ar/provincial/streaming/mystream.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/801_Canal_Provincial.jpg",
+    "categoria": "ARGENTINA"
+  },
+  /*{
+    "nombre": "Canal Rural | AR",
+    "direccion": "https://cda2.alsolnet.com/elrural/live/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/310_Canal_Rural.jpg",
+    "categoria": "ARGENTINA"
+  },*/
+  {
+    "nombre": "Catamarca TV | AR",
+    "direccion": "https://stream.arcast.com.ar/canal7catamarca/ngrp:canal7catamarca_all/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/203_Catamarca_TV.png",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "Celta TV | AR",
+    "direccion": "https://vivo.solumedia.com:19360/celta/celta.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/815_Celta_TV.jpg",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "Chaco TV | AR",
+    "direccion": "https://wowzasrv.chaco.gov.ar/Streamtv/chacotv/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/279_Chaco_TV.png",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "Chacra TV | AR",
+    "direccion": "https://s8.stweb.tv/chacra/live/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/278_Chacra_TV.png",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "Chilecito TV | AR",
+    "direccion": "https://vivo.solumedia.com:19360/grupoemail/grupoemail.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1352_Chilecito_TV.png",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "Ciudad Magica TV | AR",
+    "direccion": "https://vd01.streaminghd.net.ar:3983/live/owbaknhdlive.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1132_Ciudad_Magica_TV.png",
+    "categoria": "ARGENTINA"
+  },
+  /*{
+    "nombre": "Ciudad TV | AR",
+    "direccion": "http://coninfo.net:1935/chacodxdtv/live/chunklist_w1251301598.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/237_Ciudad_TV.jpg",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "Ciudad TV Resistencia | AR",
+    "direccion": "http://coninfo.net:1935/chacodxdtv/live/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1353_Ciudad_TV_Resistencia.png",
+    "categoria": "ARGENTINA"
+  },*/
+  {
+    "nombre": "CMT | AR",
+    "direccion": "https://cablemor.andremor.dev/live/CMT_Argentina/index.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1387_CMT.png",
+    "categoria": "ARGENTINA"
+  },
+ /* {
+    "nombre": "CN 24/7 Neuquen | AR",
+    "direccion": "https://panel.dattalive.com/6605140/6605140/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/270_CN_24_7_Neuquen.png",
+    "categoria": "ARGENTINA"
+  },*/
+  {
+    "nombre": "Corrientes TV | AR",
+    "direccion": "https://stmvideo2.livecastv.com/canal7/canal7/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1237_Corrientes_TV.png",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "Cosmos TV | AR",
+    "direccion": "https://tv.mediacp.eu:19360/cosmos/cosmos.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1143_Cosmos_TV.png",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "CPE TV | AR",
+    "direccion": "https://stream.arcast.live/cpe/ngrp:cpe_all/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/238_CPE_TV.jpg",
+    "categoria": "ARGENTINA"
+  },
+  /*{
+    "nombre": "CVision TV | AR",
+    "direccion": "https://stream.cvisiontv.com/cvision_stream.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1354_CVision_TV.png",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "Demos Radio Visual | AR",
+    "direccion": "https://panel.dattalive.com/8066/8066/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1355_Demos_Radio_Visual.png",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "Diti TV | AR",
+    "direccion": "https://inliveserver.com:1936/8386/8386/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1413_Diti_TV.png",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "Eco TV | AR",
+    "direccion": "https://stream.arcast.com.ar/ecotv/ngrp:ecotv_all/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/303_Eco_TV.png",
+    "categoria": "ARGENTINA"
+  },*/
+  {
+    "nombre": "El 10 TV Salta | AR",
+    "direccion": "https://restreamer.el10tv.com/memfs/725003c4-79c2-4565-8311-f429db4f7777.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/281_El_10_TV_Salta.png",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "El Histonauta TV | AR",
+    "direccion": "https://stmv1.cnarlatam.com/elhistonauta/elhistonauta/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1356_El_Histonauta_TV.png",
+    "categoria": "ARGENTINA"
+  },
+  /*{
+    "nombre": "El Nueve | AR",
+    "direccion": "https://octubre-live.cdn.vustreams.com/live/channel09/live.isml/live.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1357_El_Nueve.png",
+    "categoria": "ARGENTINA"
+  }
+  {
+    "nombre": "El Palomar TV Tucuman | AR",
+    "direccion": "https://video.streamtvradio.com:8443/uv038/uv038/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/820_El_Palomar_TV_Tucuman.jpg",
+    "categoria": "ARGENTINA"
+  },,*/
+  {
+    "nombre": "El Trece | AR",
+    "direccion": "https://live-01-02-eltrece.vodgc.net/eltrecetv/index.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1358_El_Trece.png",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "Encuentro | AR",
+    "direccion": "https://538d0bde28ccf.streamlock.net/live-cont.ar/encuentro/.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1359_Encuentro.png",
+    "categoria": "ARGENTINA"
+  },
+ /* {
+    "nombre": "Fenix | AR",
+    "direccion": "https://stmvideo1.livecastv.com/fenixlarioja/fenixlarioja/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/239_Fenix.jpg",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "FM Cowboy | AR",
+    "direccion": "https://stmvideo1.livecastv.com/mundomusical/mundomusical/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1259_FM_Cowboy.png",
+    "categoria": "ARGENTINA"
+  },*/
+  {
+    "nombre": "FM Metropolitana 100.5 MHZ | AR",
+    "direccion": "https://streamtv12.ddns.net:5443/LiveApp/streams/193945633734205616732920.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/803_FM_Metropolitana_100_5_MHZ.png",
+    "categoria": "ARGENTINA"
+  },/*
+  {
+    "nombre": "FM Universo | AR",
+    "direccion": "https://stmvideo1.livecastv.com/universotvradio/universotvradio/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1460_FM_Universo.png",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "GEN TV | AR",
+    "direccion": "https://inliveserver.com:1936/14056/14056/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/240_GEN_TV.png",
+    "categoria": "ARGENTINA"
+  }*/
+  /*
+  {
+    "nombre": "Informacion Periodistica | AR",
+    "direccion": "https://d1nmqgphjn0y4.cloudfront.net/live/ip/live.isml/5ee6e167-1167-4a85-9d8d-e08a3f55cff3.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/216_Informacion_Periodistica.jpg",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "Ingenio FM | AR",
+    "direccion": "https://panel.dattalive.com/8064/8064/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1360_Ingenio_FM.png",
+    "categoria": "ARGENTINA"
+  },*/
+  {
+    "nombre": "Junto Al Campo | AR",
+    "direccion": "https://stmv5.livecastv.com/juntoalcampo/juntoalcampo/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1561_Junto_Al_Campo.png",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "La 100 | AR",
+    "direccion": "https://live-05-13-la100.vodgc.net/live-05-13-la100/index.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1470_La_100.png",
+    "categoria": "ARGENTINA"
+  },
+ 
+  
+  {
+    "nombre": "La Voz Argentina | AR",
+    "direccion": "https://srv3.zcast.com.br/lavozdetucumanhd/lavozdetucumanhd/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/217_La_Voz_Argentina.png",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "Lapacho TV Canal 11 | AR",
+    "direccion": "https://vivo.solumedia.com:19360/lapacho/lapacho.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1295_Lapacho_TV_Canal_11.png",
+    "categoria": "ARGENTINA"
+  },/*
+  {
+    "nombre": "Link TV | AR",
+    "direccion": "https://panel.dattalive.com:443/8128_1/8128_1/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/212_Link_TV.png",
+    "categoria": "ARGENTINA"
+  },*/
+  {
+    "nombre": "Litus TV | AR",
+    "direccion": "https://stream.arcast.com.ar/litustv/ngrp:litustv_all/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/241_Litus_TV.png",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "LTO Television | AR",
+    "direccion": "https://ltocatamarca.github.io/ltotv.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1086_LTO_Television.png",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "Malbec Play | AR",
+    "direccion": "https://streamlov.alsolnet.com/malbecplay/live/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1410_Malbec_Play.png",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "Mas FM | AR",
+    "direccion": "https://vivo.solumedia.com:19360/masfm/masfm.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1130_Mas_FM.png",
+    "categoria": "MUSICA"
+  },
+  {
+    "nombre": "Maxima TV | AR",
+    "direccion": "https://cageu.bozztv.com/ssh101/ssh101/maxtvstreaming/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1381_Maxima_TV.png",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "Medios Provincia | AR",
+    "direccion": "https://stream.arcast.net:4443/mp/mp/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1394_Medios_Provincia.png",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "Megaclassic TV | AR",
+    "direccion": "https://stmvideo1.livecastv.com/megaclassic/megaclassic/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1544_Megaclassic_TV.png",
+    "categoria": "MUSICA"
+  },
+ /* {
+    "nombre": "Metropolitana FM | AR",
+    "direccion": "https://panel.dattalive.com/MetropolitanaFM/MetropolitanaFM/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/795_Metropolitana_FM.png",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "Milenium TV | AR",
+    "direccion": "https://video.alfasocialmedia.com.ar:3396/live/milleniumtvlive.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/793_Milenium_TV.png",
+    "categoria": "ARGENTINA"
+  },*/
+  {
+    "nombre": "Misiones Cuatro | AR",
+    "direccion": "https://streamlov.alsolnet.com/misionescuatro/live/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1362_Misiones_Cuatro.png",
+    "categoria": "ARGENTINA"
+  },
+  /*{
+    "nombre": "Multivisión | AR",
+    "direccion": "https://panel.dattalive.com/8250/8250/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/284_Multivision.png",
+    "categoria": "ARGENTINA"
+  },*/
+ /* {
+    "nombre": "Neo Net Music | AR",
+    "direccion": "https://panel.dattalive.com/8174/8174/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1558_Neo_Net_Music.png",
+    "categoria": "ARGENTINA"
+  }
+  {
+    "nombre": "Neox TV | AR",
+    "direccion": "https://streamcasthd.com:19360/sonicaargentina/sonicaargentina.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1363_Neox_TV.png",
+    "categoria": "ARGENTINA"
+  },,*/
+  {
+    "nombre": "Net TV | AR",
+    "direccion": "https://unlimited1-cl-isp.dps.live/nettv/nettv.smil/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/285_Net_TV.png",
+    "categoria": "ARGENTINA"
+  },
+  /*{
+    "nombre": "OKfm 105.7 | AR",
+    "direccion": "https://panel.dattalive.com/8124/8124/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1458_OKfm_105_7.png",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "Play Television | AR",
+    "direccion": "https://vivo.solumedia.com:19360/playtv/playtv.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/213_Play_Television.jpg",
+    "categoria": "ARGENTINA"
+  },*/
+  {
+    "nombre": "Power | AR",
+    "direccion": "https://live2.tensila.com/1-1-1.power-tv/hls/master.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/243_Power.png",
+    "categoria": "MUSICA"
+  },
+  {
+    "nombre": "Power Max TV | AR",
+    "direccion": "https://videostream.shockmedia.com.ar:19360/radio1045/radio1045.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1382_Power_Max_TV.png",
+    "categoria": "ARGENTINA"
+  },
+ /* {
+    "nombre": "Quaere TV | AR",
+    "direccion": "https://videostream.shockmedia.com.ar:19360/quaeretv/quaeretv.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1477_Quaere_TV.png",
+    "categoria": "ARGENTINA"
+  },*/
+  {
+    "nombre": "Quatro TV | AR",
+    "direccion": "https://stream.arcast.live/quatro/quatro/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/286_Quatro_TV.png",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "Radio Blu | AR",
+    "direccion": "https://vivo.solumedia.com:19360/canalblu/canalblu.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/912_Radio_Blu.png",
+    "categoria": "ARGENTINA"
+  },
+  /*{
+    "nombre": "Radio Diversidad | AR",
+    "direccion": "https://srv2.zcast.com.br/diversidad/diversidad/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/842_Radio_Diversidad.png",
+    "categoria": "ARGENTINA"
+  },*/
+  {
+    "nombre": "Radio TV Neuquen | AR",
+    "direccion": "http://media.neuquen.gov.ar/rtn/television/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/287_Radio_TV_Neuquen.png",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "Radio Valle Viejo | AR",
+    "direccion": "https://stmvideo1.livecastv.com/valleviejo/valleviejo/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1453_Radio_Valle_Viejo.png",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "Radiocanal San Francisco | AR",
+    "direccion": "http://204.199.3.2/.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/210_Radiocanal_San_Francisco.png",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "RBD Radio Multimedia | AR",
+    "direccion": "https://videostream.shockmedia.com.ar:19360/rbdradio/rbdradio.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/797_RBD_Radio_Multimedia.png",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "Retro Magico | AR",
+    "direccion": "https://ssh101.bozztv.com/ssh101/retromagicochnl/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1364_Retro_Magico.png",
+    "categoria": "DIBUJOS"
+  },
+  {
+    "nombre": "Sello TV | AR",
+    "direccion": "https://5f700d5b2c46f.streamlock.net:443/elsellotv/elsellotv/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1406_Sello_TV.png",
+    "categoria": "ARGENTINA"
+  },
+  /*{
+    "nombre": "Senillosa TV | AR",
+    "direccion": "https://stmv1.srvstm.com/senillosa/senillosa/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1365_Senillosa_TV.png",
+    "categoria": "ARGENTINA"
+  },*/
+  {
+    "nombre": "Sicardi TV | AR",
+    "direccion": "https://vivo.solumedia.com:19360/sicarditv/sicarditv.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/288_Sicardi_TV.png",
+    "categoria": "ARGENTINA"
+  },
+  /*{
+    "nombre": "Solive TV | AR",
+    "direccion": "https://stmv1.cnarlatam.com/solivetv/solivetv/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1366_Solive_TV.png",
+    "categoria": "ARGENTINA"
+  },*/
+  {
+    "nombre": "Somos La Pampa | AR",
+    "direccion": "https://stream.arcast.com.ar/somosnoticias/somosnoticias/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1072_Somos_La_Pampa.png",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "T5 Satelital | AR",
+    "direccion": "https://tv.t5satelital.com/tvhls/streamcorrientes.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/244_T5_Satelital.png",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "TDC TV Santa Fe | AR",
+    "direccion": "https://5e7cdf2370883.streamlock.net/tdconline/tdconline/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/289_TDC_TV_Santa_Fe.png",
+    "categoria": "ARGENTINA"
+  },
+  /*{
+    "nombre": "TEC TV | AR",
+    "direccion": "https://tv.initium.net.ar:3939/live/tectvmainlive.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1367_TEC_TV.png",
+    "categoria": "ARGENTINA"
+  },*/
+  {
+    "nombre": "Tele Estrella | AR",
+    "direccion": "https://stmvideo2.livecastv.com/telestrella/telestrella/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/308_Tele_Estrella.png",
+    "categoria": "ARGENTINA"
+  },
+ /* {
+    "nombre": "Tele Posadas HD | AR",
+    "direccion": "https://5e06e5e8c2e27.streamlock.net:1936/videonow/teleposadas5/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1539_Tele_Posadas_HD.png",
+    "categoria": "ARGENTINA"
+  },*/
+  {
+    "nombre": "Telecondor Internacional | AR",
+    "direccion": "https://stmvideo1.livecastv.com/telecondor/telecondor/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1543_Telecondor_Internacional.png",
+    "categoria": "ARGENTINA"
+  },
+ /* {
+    "nombre": "Telecreativa | AR",
+    "direccion": "https://panel.dattalive.com:443/8012/8012/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/290_Telecreativa.png",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "Telediario Televisión | AR",
+    "direccion": "https://stmvideo2.livecastv.com/telediario/telediario/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/291_Telediario_Television.png",
+    "categoria": "ARGENTINA"
+  },*/
+  {
+    "nombre": "Telediez | AR",
+    "direccion": "https://videohd.live:19360/8020/8020.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/245_Telediez.jpg",
+    "categoria": "ARGENTINA"
+  },
+  /*{
+    "nombre": "Telefe Rosario | AR",
+    "direccion": "http://telefewhitehls-lh.akamaihd.net/i/whitelist_hls@302302/master.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/246_Telefe_Rosario.jpg",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "TeleJunin | AR",
+    "direccion": "https://videostream.shockmedia.com.ar:19360/telejunin/telejunin.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1368_TeleJunin.png",
+    "categoria": "ARGENTINA"
+  },
+  {
+    "nombre": "Telemax | AR",
+    "direccion": "http://live-edge01.telecentro.net.ar/live/smil:tlx.smil/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/292_Telemax.png",
+    "categoria": "ARGENTINA"
+  },*/
+  {
+    "nombre": "TeleNord | AR",
+    "direccion": "http://www.coninfo.net:1935/previsoratv/live/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/814_TeleNord.jpg",
+    "categoria": "ARGENTINA"
+  },
+/*{
+    "nombre": "Telesol San Juan | AR",
+    "direccion": "https://cnnsanjuan.com:9999/live/telesol/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/295_Telesol_San_Juan.png",
+    "categoria": "ARGENTINA"
+  },*/
+  {
+    "nombre": "Televideo | AR",
+    "direccion": "https://stmvideo1.livecastv.com/televideo/televideo/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://cdn.m3u.cl/logo/1542_Televideo.png",
+    "categoria": "MUSICA"
+  },
+  {
+    "categoria": "ARGENTINA",
+    "nombre": "Telpin Canal 2",
+    "direccion": "https://wowza.telpin.com.ar:1935/telpintv/smil:ttv.stream.smil/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "https://www.telpinteve.com.ar/imagenes/Canal2Logos-03.png",
+  },
+  /*{
+    "categoria": "ARGENTINA",
+    "nombre": "Tierramia TV",
+    "direccion": "https://live-edge01.telecentro.net.ar/live/smil:trm.smil/playlist.m3u8?PlaylistM3UCL",
+    "logo": ""
+  },*/
+  {
+    "categoria": "ARGENTINA",
+    "nombre": "TV Mana",
+    "direccion": "https://w2.manasat.com:443/tvmana-ar/smil:tvmana-ar.smil/playlist.m3u8?PlaylistM3UCL",
+    "imagen": "data:image/png;base64,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"
+  },
+  {
+    "categoria": "ARGENTINA",
+    "nombre": "TV Publica Marcos Paz",
+    "direccion": "https://nd106.republicaservers.com/hls/skerk4747/index.m3u8?PlaylistM3UCL",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxaWipZx8CSHhhV8Zj6dfBej6O84MTtfc3vdx3beuQGslOyXcTWjUq4h385tYNvWPtiq4&usqp=CAU"
+  },
+  {
+    "categoria": "ARGENTINA",
+    "nombre": "TV Solidaria",
+    "direccion": "https://canadaremar2.todostreaming.es/live/argentina-web.m3u8?PlaylistM3UCL",
+    "imagen": "https://pbs.twimg.com/profile_images/378800000279128550/6876cc8545f08c986c8a748c0473e550_400x400.jpeg"
+  },
+  {
+    "categoria": "ARGENTINA",
+        "nombre": "Uni Teve",
+    "direccion": "https://vivo.solumedia.com:19360/uniteve/uniteve.m3u8?PlaylistM3UCL",
+    "imagen": "https://lh3.googleusercontent.com/proxy/sZH6vMwwS_NLi8lUgg2UruaabAMppwFP6oJzBCW8nCu1AEwBc-AyEiaJUAhOmPQy_GUQ6QfNV1-mJGC0dbCIJkRBQ53AhRSHUTyA8ISHeODHSE0V5WLlxN2disKw-HoNAPJv"
+  },
+  {
+    "categoria": "ARGENTINA",
+    "nombre": "Urbana TeVe",
+    "direccion": "https://cdnhd.iblups.com/hls/DD3nXkAkWk.m3u8?PlaylistM3UCL",
+    "imagen": "https://defensadelpublico.gob.ar/wp-content/uploads/2017/09/urbana-teve-fondo.gif"
+  },
+  {
+    "categoria": "ARGENTINA",
+    "nombre": "Ver TV",
+    "direccion": "https://5f700d5b2c46f.streamlock.net/vertv/vertv/playlist.m3u8?PlaylistM3UCL",
+    "logo": ""
+  },
+  {
+    "categoria": "ARGENTINA",
+    "nombre": "Vive TV",
+    "direccion": "https://vivo.solumedia.com:19360/vivetv/vivetv.m3u8?PlaylistM3UCL",
+    "imagen": "https://yt3.googleusercontent.com/bfJuAoqMkO4V77uCtcxb1A6ApK8uptAjvqLHGHNg6VMBHmTn3HdPj917lxHPjn_XggAyeaiOhQ=s900-c-k-c0x00ffffff-no-rj"
+  },
+  {
+    "categoria": "ARGENTINA",
+    "nombre": "TV Publica",
+    "direccion": "https://cntlnk-main-edge-access.secure.footprint.net/entrypoint/c7_vivo01_dai_source-20001_all.m3u8?PlaylistM3UCL",
+    "imagen": "data:image/jpeg;base64,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"
+  },
+  {
+    "categoria": "ARGENTINA",
+    "nombre": "Music Top",
+    "direccion": "http://live-edge01.telecentro.net.ar/live/smil:musictop.smil/playlist.m3u8?PlaylistM3UCL",
+    "logo": ""
+  },
+  {
+    "categoria": "ARGENTINA",
+    "nombre": "PANC TV",
+    "direccion": "https://stream.trixserver.com:3088/live/uv096live.m3u8?PlaylistM3UCL",
+    "logo": ""
+  },
+  {
+    "categoria": "ARGENTINA",
+    "nombre": "Canal 6 - Viento Recio Internacional",
+    "direccion": "https://stmvideo2.livecastv.com/vientorecio/vientorecio/playlist.m3u8?PlaylistM3UCL",
+    "logo": ""
+  },
+  {
+    "categoria": "ARGENTINA",
+    "nombre": "Inminente TV",
+    "direccion": "https://stmvideo2.livecastv.com/zonagospel/zonagospel/playlist.m3u8?PlaylistM3UCL",
+    "logo": ""
+  },
+  {
+    "categoria": "ARGENTINA",
+    "nombre": "Sublime Gracia TV",
+    "direccion": "https://5f700d5b2c46f.streamlock.net:443/sublime/sublime/playlist.m3u8?PlaylistM3UCL",
+    "logo": ""
+  }
 
 ];
 export { canales }; 

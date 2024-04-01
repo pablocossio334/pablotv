@@ -4,6 +4,9 @@
   height: 98vh;
   margin:auto;
 }
+h2{
+  color:yellow;
+}
 .canales{
   display:flex;
   justify-content: center;

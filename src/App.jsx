@@ -46,7 +46,8 @@ function App() {
             <select value={selectedCategory} onChange={handleCategoryChange}>
               <option value="todos">Todos</option>
               <option value="MUSICA">MUSICA</option>
-              <option value="ARGENTINA">Argentina</option>
+              <option value="DIBUJOS">DIBUJOS</option>
+              <option value="ARGENTINA">ARGENTINA</option>
               {/* Agrega más opciones según las categorías que necesites */}
             </select>
           </div>
